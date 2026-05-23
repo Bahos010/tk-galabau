@@ -11,7 +11,9 @@
 
   /* ---- Sticky header ---- */
   const header = document.getElementById('header');
+  var menuIsOpen = false;
   function handleScroll() {
+    if (menuIsOpen) return; // don't change header state while menu is open
     header.classList.toggle('scrolled', window.scrollY > 40);
   }
   window.addEventListener('scroll', handleScroll, { passive: true });
@@ -41,7 +43,16 @@
       const open = navList.classList.toggle('open');
       burger.classList.toggle('open', open);
       burger.setAttribute('aria-expanded', open.toString());
-      open ? lockScroll() : unlockScroll();
+      menuIsOpen = open;
+      // Force header to stay visible while menu is open
+      if (open) {
+        header.classList.add('scrolled');
+        lockScroll();
+      } else {
+        unlockScroll();
+        // Restore correct header state based on actual scroll position
+        header.classList.toggle('scrolled', window.scrollY > 40);
+      }
     });
 
     // Close menu when a link is clicked
@@ -50,7 +61,9 @@
         navList.classList.remove('open');
         burger.classList.remove('open');
         burger.setAttribute('aria-expanded', 'false');
+        menuIsOpen = false;
         unlockScroll();
+        header.classList.toggle('scrolled', window.scrollY > 40);
       });
     });
 
@@ -62,7 +75,9 @@
         navList.classList.remove('open');
         burger.classList.remove('open');
         burger.setAttribute('aria-expanded', 'false');
+        menuIsOpen = false;
         unlockScroll();
+        header.classList.toggle('scrolled', window.scrollY > 40);
       }
     });
   }
