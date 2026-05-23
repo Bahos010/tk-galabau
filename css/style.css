@@ -1524,11 +1524,13 @@ ul { list-style: none; }
     backdrop-filter: blur(16px);
     transform: translateX(100%);
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 9;
+    overscroll-behavior: contain;
   }
   .nav__list.open { transform: translateX(0); }
   .nav__link { font-size: 1.2rem; color: rgba(255,255,255,0.9); }
   .nav__link--cta { font-size: 1.1rem; padding: 0.7rem 2rem; }
-  .nav__burger { display: flex; z-index: 10; }
+  .nav__burger { display: flex; z-index: 10; position: relative; }
 
   .hero__content { padding-top: 8rem; padding-bottom: 6rem; }
   .hero__actions { flex-direction: column; align-items: flex-start; }
