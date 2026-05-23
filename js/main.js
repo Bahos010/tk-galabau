@@ -21,27 +21,11 @@
   const burger  = document.getElementById('burger');
   const navList = document.getElementById('navList');
 
-  // iOS-safe scroll lock: prevents page jump when body overflow is toggled
-  var scrollLockY = 0;
-  function lockScroll() {
-    scrollLockY = window.scrollY;
-    document.body.style.top      = '-' + scrollLockY + 'px';
-    document.body.style.position = 'fixed';
-    document.body.style.width    = '100%';
-  }
-  function unlockScroll() {
-    document.body.style.position = '';
-    document.body.style.top      = '';
-    document.body.style.width    = '';
-    window.scrollTo(0, scrollLockY);
-  }
-
   if (burger && navList) {
     burger.addEventListener('click', function () {
       const open = navList.classList.toggle('open');
       burger.classList.toggle('open', open);
       burger.setAttribute('aria-expanded', open.toString());
-      open ? lockScroll() : unlockScroll();
     });
 
     // Close menu when a link is clicked
@@ -50,7 +34,6 @@
         navList.classList.remove('open');
         burger.classList.remove('open');
         burger.setAttribute('aria-expanded', 'false');
-        unlockScroll();
       });
     });
 
@@ -62,7 +45,6 @@
         navList.classList.remove('open');
         burger.classList.remove('open');
         burger.setAttribute('aria-expanded', 'false');
-        unlockScroll();
       }
     });
   }
