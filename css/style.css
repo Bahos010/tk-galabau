@@ -1520,7 +1520,8 @@ ul { list-style: none; }
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: #1a3d2b;
+    background: rgba(27, 67, 50, 0.97);
+    backdrop-filter: blur(16px);
     transform: translateX(100%);
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     z-index: 9;
