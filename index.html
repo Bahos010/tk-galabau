@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TK GaLaBau – Ihr Fachbetrieb für Garten- und Landschaftsbau in Hilden. Seit 2008 für Sie im Einsatz. Gartengestaltung, Pflasterungen, Dachbegrünung und mehr." />
+  <meta name="keywords" content="Gartenbau Hilden, Landschaftsbau Düsseldorf, Gartengestaltung, Pflasterung, Dachbegrünung, TK GaLaBau" />
+  <title>TK GaLaBau – Garten- & Landschaftsbau Hilden</title>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#2d6a4f"/>
+            <path d="M20 8 C14 14 10 18 10 24 C10 29 14.5 33 20 33 C25.5 33 30 29 30 24 C30 18 26 14 20 8Z" fill="#52b788"/>
+            <path d="M20 14 C17 18 15 21 15 25 C15 28 17.2 30.5 20 30.5" fill="#74c69d"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">TK <strong>GaLaBau</strong></span>
+      </a>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="#about" class="nav__link">Über uns</a></li>
+        <li><a href="#services" class="nav__link">Leistungen</a></li>
+        <li><a href="#area" class="nav__link">Einsatzgebiet</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Kontakt</a></li>
+      </ul>
+
+      <button class="nav__burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__shapes">
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+      </div>
+    </div>
+    <div class="container hero__content">
+      <span class="hero__badge">Seit 2008 in Hilden</span>
+      <h1 class="hero__title">
+        Ihr Garten.<br/>
+        <span class="hero__title--accent">Unsere Leidenschaft.</span>
+      </h1>
+      <p class="hero__subtitle">
+        Fachbetrieb für Garten- und Landschaftsbau im Herzen des Rheinlands —
+        von der Gartengestaltung bis zur Dachbegrünung.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Kostenloses Angebot</a>
+        <a href="#services" class="btn btn--outline">Unsere Leistungen</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-value">15+</span>
+          <span class="hero__stat-label">Jahre Erfahrung</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">4,95</span>
+          <span class="hero__stat-label">⭐ Bewertung</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">100km</span>
+          <span class="hero__stat-label">Einsatzgebiet</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Nach unten scrollen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M7 10l5 5 5-5"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual" data-reveal>
+          <div class="about__card about__card--main">
+            <div class="about__illustration">
+              <svg viewBox="0 0 300 260" fill="none" xmlns="http://www.w3.org/2000/svg" class="about__svg">
+                <!-- Ground -->
+                <rect x="0" y="220" width="300" height="40" fill="#a8d5a2" rx="4"/>
+                <!-- Big tree -->
+                <rect x="138" y="130" width="12" height="90" fill="#7c5c3e"/>
+                <ellipse cx="144" cy="105" rx="38" ry="42" fill="#2d6a4f"/>
+                <ellipse cx="130" cy="115" rx="28" ry="32" fill="#40916c"/>
+                <ellipse cx="158" cy="112" rx="24" ry="30" fill="#52b788"/>
+                <!-- Small tree left -->
+                <rect x="45" y="175" width="8" height="45" fill="#7c5c3e"/>
+                <ellipse cx="49" cy="162" rx="22" ry="26" fill="#1b4332"/>
+                <ellipse cx="40" cy="170" rx="16" ry="20" fill="#2d6a4f"/>
+                <!-- Flowers -->
+                <circle cx="70" cy="218" r="6" fill="#f4a261"/>
+                <circle cx="85" cy="215" r="5" fill="#e76f51"/>
+                <circle cx="220" cy="216" r="7" fill="#f4a261"/>
+                <circle cx="235" cy="214" r="5" fill="#e9c46a"/>
+                <!-- Path -->
+                <path d="M100 260 Q130 230 160 230 Q190 230 210 260" fill="#d4a373" opacity="0.6"/>
+                <!-- House -->
+                <rect x="195" y="155" width="70" height="65" fill="#e9ecef"/>
+                <polygon points="195,155 230,120 265,155" fill="#6b7280"/>
+                <rect x="215" y="185" width="18" height="35" fill="#7c5c3e"/>
+                <rect x="205" y="163" width="16" height="14" fill="#93c5fd"/>
+                <rect x="241" y="163" width="16" height="14" fill="#93c5fd"/>
+                <!-- Lawn / hedge -->
+                <rect x="0" y="210" width="300" height="12" fill="#52b788" rx="2"/>
+                <ellipse cx="80" cy="210" rx="25" ry="10" fill="#40916c"/>
+                <ellipse cx="240" cy="210" rx="20" ry="9" fill="#40916c"/>
+              </svg>
+            </div>
+          </div>
+          <div class="about__badge-float about__badge-float--1">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L8 8H2l4.5 4.1-1.7 6.4L12 15l7.2 3.5-1.7-6.4L22 8h-6z"/></svg>
+            <span>Zertifizierter Fachbetrieb</span>
+          </div>
+          <div class="about__badge-float about__badge-float--2">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <span>34 Bewertungen · 4,95★</span>
+          </div>
+        </div>
+
+        <div class="about__text" data-reveal>
+          <span class="section__label">Über TK GaLaBau</span>
+          <h2 class="section__title">Mehr als 15 Jahre Leidenschaft für Ihren Garten</h2>
+          <p class="about__lead">
+            Seit 2008 gestalten und pflegen wir Gärten und Außenanlagen im Raum Hilden —
+            mit Herzblut, Fachkenntnis und dem Anspruch, Ihre Wünsche perfekt umzusetzen.
+          </p>
+          <p class="about__text-p">
+            Inhaber <strong>Tayfun Kartaloglu</strong> führt den Betrieb mit großer Leidenschaft
+            und wird von einem erfahrenen Team aus ausgebildeten Gärtnern und Straßenbauern unterstützt.
+            Wir betreuen Privatkunden ebenso wie Gewerbekunden, Hausverwaltungen und öffentliche Träger.
+          </p>
+          <ul class="about__features">
+            <li>
+              <span class="about__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Kostenlose & unverbindliche Beratung vor Ort
+            </li>
+            <li>
+              <span class="about__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Zuverlässige, schnelle und saubere Ausführung
+            </li>
+            <li>
+              <span class="about__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Zertifiziert in Bauwerksabdichtung & Horizontalsperren
+            </li>
+            <li>
+              <span class="about__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Hervorragendes Preis-Leistungs-Verhältnis
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Jetzt Termin vereinbaren</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__label">Was wir bieten</span>
+        <h2 class="section__title">Unsere Leistungen</h2>
+        <p class="section__subtitle">
+          Vom kleinen Rollrasen bis zur kompletten Gartenumgestaltung —
+          wir sind Ihr zuverlässiger Partner für alle Bereiche des Garten- und Landschaftsbaus.
+        </p>
+      </div>
+
+      <div class="services__grid">
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" style="--card-color: #2d6a4f">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6C18 14 12 18 12 28C12 35 17.4 41 24 41C30.6 41 36 35 36 28C36 18 30 14 24 6Z" fill="currentColor" opacity="0.2"/>
+              <path d="M24 10C19 17 15 21 15 28C15 33.5 19 38 24 38C29 38 33 33.5 33 28C33 21 29 17 24 10Z" fill="currentColor"/>
+              <path d="M24 20V41M18 28C18 28 21 26 24 28" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Gartengestaltung</h3>
+          <p class="service-card__text">Komplette Neugestaltung und Umgestaltung Ihrer Außenanlagen nach Ihren individuellen Wünschen und Vorstellungen.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" style="--card-color: #40916c">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="34" width="36" height="6" rx="2" fill="currentColor" opacity="0.3"/>
+              <rect x="10" y="28" width="28" height="8" rx="1" fill="currentColor" opacity="0.5"/>
+              <path d="M14 28V18L18 14H30L34 18V28" fill="currentColor" opacity="0.7"/>
+              <path d="M8 34H40M8 28H40" stroke="white" stroke-width="1.2"/>
+              <rect x="20" y="8" width="8" height="20" rx="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Pflasterung & Wegebau</h3>
+          <p class="service-card__text">Gartenwege, Natursteinpflaster, Sitzecken und Zufahrten — handwerklich präzise und optisch ansprechend.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" style="--card-color: #52b788">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="10" width="36" height="6" rx="3" fill="currentColor"/>
+              <path d="M10 16C10 22 12 28 18 32C22 34 26 34 30 32C36 28 38 22 38 16" fill="currentColor" opacity="0.3"/>
+              <path d="M16 20C16 20 18 26 24 28C30 26 32 20 32 20" fill="currentColor" opacity="0.6"/>
+              <rect x="10" y="38" width="28" height="4" rx="2" fill="currentColor" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Dachbegrünung</h3>
+          <p class="service-card__text">Wir begrünen Flachdächer fachgerecht — für mehr Wohnqualität, bessere Dämmung und ein gesünderes Stadtklima.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" style="--card-color: #74c69d">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 38C10 30 16 22 24 18C32 22 38 30 38 38" fill="currentColor" opacity="0.2"/>
+              <circle cx="24" cy="30" r="10" fill="currentColor" opacity="0.5"/>
+              <path d="M18 32C19 28 22 26 24 26C26 26 29 28 30 32" fill="currentColor" opacity="0.8"/>
+              <path d="M8 38H40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 38V28" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Gartenpflege</h3>
+          <p class="service-card__text">Regelmäßige Pflege: Rasenmähen, Heckenschnitt, Bewässerung, Düngung — damit Ihr Garten das ganze Jahr strahlt.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" style="--card-color: #1b4332">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="32" width="36" height="10" rx="2" fill="currentColor" opacity="0.3"/>
+              <rect x="10" y="24" width="8" height="18" rx="1" fill="currentColor" opacity="0.6"/>
+              <rect x="20" y="20" width="8" height="22" rx="1" fill="currentColor" opacity="0.8"/>
+              <rect x="30" y="26" width="8" height="16" rx="1" fill="currentColor"/>
+              <path d="M6 32H42" stroke="white" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Terrassen & Holzbau</h3>
+          <p class="service-card__text">Hochwertige Holzterrassen und Natursteinterrassen — Ihr persönlicher Wohnraum unter freiem Himmel.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" style="--card-color: #40916c">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="24" cy="30" rx="14" ry="10" fill="currentColor" opacity="0.3"/>
+              <ellipse cx="24" cy="28" rx="10" ry="8" fill="currentColor" opacity="0.6"/>
+              <ellipse cx="24" cy="26" rx="6" ry="6" fill="currentColor"/>
+              <path d="M24 20V10M20 24H10M28 24H38M22 22L16 16M26 22L32 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="22" y="36" width="4" height="8" rx="1" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Teiche & Pools</h3>
+          <p class="service-card__text">Gartenteiche, Schwimmteiche und Swimmingpools — wir planen und realisieren Ihre Wasser-Oase.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" style="--card-color: #2d6a4f">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 12H40L36 36H12L8 12Z" fill="currentColor" opacity="0.2"/>
+              <path d="M8 12L12 36H36L40 12" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 12H42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 12V8C18 7 19 6 20 6H28C29 6 30 7 30 8V12" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="24" y1="16" x2="24" y2="32" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="18" y1="18" x2="18" y2="30" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="30" y1="18" x2="30" y2="30" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Bepflanzungen & Rollrasen</h3>
+          <p class="service-card__text">Von der Einzelbepflanzung bis zum fertigen Rollrasen — wir lassen Ihren Garten in Kürze erblühen.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" style="--card-color: #52b788">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="18" width="36" height="22" rx="2" fill="currentColor" opacity="0.2"/>
+              <path d="M6 28H42M18 18V40M30 18V40" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <rect x="6" y="14" width="36" height="6" rx="1" fill="currentColor" opacity="0.7"/>
+              <path d="M14 8C14 6 16 6 18 8C20 6 22 6 22 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Zaunarbeiten & Mauern</h3>
+          <p class="service-card__text">Zäune, Trockenmauern und Stützmauern aus hochwertigen Materialien — funktional und gestalterisch ansprechend.</p>
+        </article>
+
+        <article class="service-card service-card--highlight" data-reveal>
+          <div class="service-card__icon" style="--card-color: #fff">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6L24 42M12 16L12 42M36 20L36 42M6 42H42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 16C12 10 18 8 24 12C30 8 36 10 36 20" fill="white" opacity="0.3"/>
+              <circle cx="12" cy="14" r="3" fill="white" opacity="0.8"/>
+              <circle cx="36" cy="18" r="3" fill="white" opacity="0.8"/>
+              <circle cx="24" cy="6" r="3" fill="white"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Kellerisolierung</h3>
+          <p class="service-card__text">Zertifizierte Bauwerksabdichtung und Horizontalsperren — wir schützen Ihr Gebäude nachhaltig vor Feuchtigkeit.</p>
+          <span class="service-card__badge">Zertifiziert</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AREA ===== -->
+  <section class="section area" id="area">
+    <div class="container">
+      <div class="area__grid">
+        <div class="area__text" data-reveal>
+          <span class="section__label">Wo wir tätig sind</span>
+          <h2 class="section__title">Ihr regionaler Partner im Rheinland</h2>
+          <p>
+            Unser Standort in <strong>Hilden</strong> im Kreis Mettmann liegt ideal zwischen
+            Düsseldorf, Solingen und Wuppertal. Von hier aus bedienen wir ein
+            Einsatzgebiet von rund <strong>100 km</strong> — für private und gewerbliche Auftraggeber gleichermaßen.
+          </p>
+          <ul class="area__cities">
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Hilden (Firmensitz)
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Düsseldorf
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Solingen
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Wuppertal
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Mettmann & Umgebung
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Gesamtes Rheinland (~100 km)
+            </li>
+          </ul>
+        </div>
+        <div class="area__map" data-reveal>
+          <!-- Stylized map illustration -->
+          <svg viewBox="0 0 400 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="area__svg">
+            <!-- Background -->
+            <rect width="400" height="380" rx="16" fill="#e8f5e9"/>
+            <!-- Road network (stylized) -->
+            <path d="M200 20 L200 360" stroke="#c8e6c9" stroke-width="12" stroke-linecap="round"/>
+            <path d="M20 190 L380 190" stroke="#c8e6c9" stroke-width="12" stroke-linecap="round"/>
+            <path d="M80 80 L320 300" stroke="#dcedc8" stroke-width="8" stroke-linecap="round"/>
+            <path d="M320 80 L80 300" stroke="#dcedc8" stroke-width="8" stroke-linecap="round"/>
+            <!-- City dots -->
+            <!-- Düsseldorf -->
+            <circle cx="160" cy="110" r="22" fill="#2d6a4f" opacity="0.15"/>
+            <circle cx="160" cy="110" r="12" fill="#2d6a4f" opacity="0.3"/>
+            <circle cx="160" cy="110" r="5" fill="#2d6a4f"/>
+            <text x="180" y="108" font-size="11" fill="#1b4332" font-family="Inter, sans-serif" font-weight="600">Düsseldorf</text>
+            <!-- Hilden / MAIN -->
+            <circle cx="200" cy="190" r="28" fill="#40916c" opacity="0.2"/>
+            <circle cx="200" cy="190" r="16" fill="#40916c" opacity="0.35"/>
+            <circle cx="200" cy="190" r="8" fill="#2d6a4f"/>
+            <text x="216" y="188" font-size="13" fill="#1b4332" font-family="Inter, sans-serif" font-weight="700">Hilden ★</text>
+            <!-- Solingen -->
+            <circle cx="265" cy="245" r="18" fill="#52b788" opacity="0.2"/>
+            <circle cx="265" cy="245" r="9" fill="#52b788" opacity="0.4"/>
+            <circle cx="265" cy="245" r="4" fill="#40916c"/>
+            <text x="278" y="243" font-size="11" fill="#1b4332" font-family="Inter, sans-serif" font-weight="600">Solingen</text>
+            <!-- Wuppertal -->
+            <circle cx="300" cy="150" r="18" fill="#52b788" opacity="0.2"/>
+            <circle cx="300" cy="150" r="9" fill="#52b788" opacity="0.4"/>
+            <circle cx="300" cy="150" r="4" fill="#40916c"/>
+            <text x="313" y="148" font-size="11" fill="#1b4332" font-family="Inter, sans-serif" font-weight="600">Wuppertal</text>
+            <!-- Mettmann -->
+            <circle cx="240" cy="185" r="10" fill="#74c69d" opacity="0.4"/>
+            <circle cx="240" cy="185" r="4" fill="#52b788"/>
+            <text x="250" y="183" font-size="10" fill="#1b4332" font-family="Inter, sans-serif">Mettmann</text>
+            <!-- 100km circle -->
+            <circle cx="200" cy="190" r="150" stroke="#40916c" stroke-width="2" stroke-dasharray="8 6" fill="none" opacity="0.4"/>
+            <text x="200" y="356" font-size="10" fill="#40916c" font-family="Inter, sans-serif" text-anchor="middle" opacity="0.8">~ 100 km Einsatzgebiet</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__label">Warum TK GaLaBau?</span>
+        <h2 class="section__title">Das spricht für uns</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why__item" data-reveal>
+          <div class="why__number">01</div>
+          <h3 class="why__title">Kostenlose Erstberatung</h3>
+          <p>Wir kommen zu Ihnen — für ein persönliches, unverbindliches Beratungsgespräch direkt vor Ort.</p>
+        </div>
+        <div class="why__item" data-reveal>
+          <div class="why__number">02</div>
+          <h3 class="why__title">Erfahrenes Team</h3>
+          <p>Gutausgebildete Gärtner und Straßenbauer mit jahrelanger Erfahrung und kontinuierlicher Weiterbildung.</p>
+        </div>
+        <div class="why__item" data-reveal>
+          <div class="why__number">03</div>
+          <h3 class="why__title">Rundum-Service</h3>
+          <p>Von der Gartengestaltung bis zur Kellerisolierung — alles aus einer Hand, vom ersten Plan bis zur Fertigstellung.</p>
+        </div>
+        <div class="why__item" data-reveal>
+          <div class="why__number">04</div>
+          <h3 class="why__title">Ausgezeichnete Bewertungen</h3>
+          <p>Mit <strong>4,95 von 5 Sternen</strong> und 34 Kundenbewertungen zählen wir zu den bestverdienenden Betrieben der Region.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+
+        <div class="contact__info" data-reveal>
+          <span class="section__label section__label--light">Kontakt</span>
+          <h2 class="section__title section__title--light">Ihr Gartenprojekt beginnt hier</h2>
+          <p class="contact__intro">
+            Erzählen Sie uns von Ihrem Vorhaben — wir melden uns schnell zurück
+            und vereinbaren gerne einen kostenlosen Besichtigungstermin.
+          </p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div>
+                <strong>TK GaLaBau</strong><br/>
+                Giesenheide 45A<br/>
+                40724 Hilden
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <a href="tel:+491737177255">+49 173 7177255</a> (Mobil)<br/>
+                <a href="tel:+4921039784048">+49 2103 9784048</a> (Telefon)
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <a href="mailto:info@tk-galabau.de">info@tk-galabau.de</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" data-reveal novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="firstName">Vorname *</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="Max" autocomplete="given-name" />
+            </div>
+            <div class="form__group">
+              <label for="lastName">Nachname *</label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Mustermann" autocomplete="family-name" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="phone">Telefon *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+49 ..." autocomplete="tel" />
+            </div>
+            <div class="form__group">
+              <label for="email">E-Mail *</label>
+              <input type="email" id="email" name="email" required placeholder="max@beispiel.de" autocomplete="email" />
+            </div>
+          </div>
+          <div class="form__group form__group--full">
+            <label for="service">Gewünschte Leistung</label>
+            <select id="service" name="service">
+              <option value="">Bitte wählen …</option>
+              <option>Gartengestaltung / Neugestaltung</option>
+              <option>Pflasterung & Wegebau</option>
+              <option>Dachbegrünung</option>
+              <option>Gartenpflege</option>
+              <option>Terrassen & Holzbau</option>
+              <option>Teiche & Pools</option>
+              <option>Bepflanzungen & Rollrasen</option>
+              <option>Zaunarbeiten & Mauern</option>
+              <option>Kellerisolierung</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+          <div class="form__group form__group--full">
+            <label for="message">Ihre Nachricht *</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Fragen …"></textarea>
+          </div>
+          <div class="form__group form__group--full form__checkbox">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy">
+              Ich stimme zu, dass meine Angaben zur Beantwortung meiner Anfrage verarbeitet werden.
+              Die Daten werden nach Abschluss der Bearbeitung gelöscht.
+              Details in der <a href="https://www.tk-galabau.de/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a>.
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            Nachricht senden
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <p class="form__note">* Pflichtfelder. Kostenlos und unverbindlich.</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-text">TK <strong>GaLaBau</strong></span>
+        <p>Fachbetrieb für Garten- und Landschaftsbau<br/>Giesenheide 45A · 40724 Hilden</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://www.tk-galabau.de/impressum" target="_blank" rel="noopener">Impressum</a>
+        <a href="https://www.tk-galabau.de/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+        <a href="mailto:info@tk-galabau.de">info@tk-galabau.de</a>
+      </div>
+      <p class="footer__copy">© <span id="year"></span> TK GaLaBau · Tayfun Kartaloglu</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
